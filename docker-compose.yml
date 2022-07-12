@@ -3,10 +3,8 @@ version: "3"
 services:
  ytdl-app:
    image: node:12-alpine
-   command: sh -c "npm install && npm start"
+   dockerfile: Dockerfile
    ports:
      - 3000:3005
-   working_dir: /app
    volumes:
-     - ./:/app
      - /tmp/videos:/home/app/public/temp
