@@ -3,7 +3,7 @@ version: "3"
 services:
  ytdl-app:
    image: node:12-alpine
-   command: sh -c "npm install"
+   command: sh -c "npm install && npm start"
    ports:
      - 3000:3005
    working_dir: /app
